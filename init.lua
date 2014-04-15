@@ -1,5 +1,5 @@
--- The following is tahen from:
--- Minetest 0.4 mod: stairs
+-- morestairs mod
+-- The code is taken from: Minetest 0.4 mod: stairs
 -- See README.txt for licensing and other information.
 
 stairs = {}
@@ -221,8 +221,7 @@ function stairs.register_stair_and_slab(subname, recipeitem, groups, images, des
 	stairs.register_slab(subname, recipeitem, groups, images, desc_slab, sounds)
 end
 
--- Now the new blocks I added for stairs and slabs, the textures will be taken from stairs mod
-
+-- Now the new blocks I added for stairs and slabs, the textures will be taken from default stairs mod
 stairs.register_stair_and_slab("desert_stone", "default:desert_stone",
 		{cracky=3, stone=1},
 		{"default_desert_stone.png"},
